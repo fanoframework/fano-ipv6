@@ -1,6 +1,6 @@
-# SCGI Fano Web Framework Skeleton Application
+# IPv6 SCGI Fano web application example
 
-[SCGI](https://python.ca/scgi/protocol.txt) web application skeleton using Fano Framework, Pascal web application framework
+Example [SCGI](https://python.ca/scgi/protocol.txt) web application skeleton using Fano Framework, Pascal web application framework, that demonstrates how to use IPv6 address.
 
 This project is generated using [Fano CLI](https://github.com/fanoframework/fano-cli)
 command line tools to help scaffolding web application using Fano Framework.
@@ -19,8 +19,8 @@ command line tools to help scaffolding web application using Fano Framework.
 ### TLDR
 Make sure all requirements are met. Run
 ```
-$ git clone https://your-repo-hostname/fano-app.git --recursive
-$ cd fano-app
+$ git clone https://github.com/fanoframework/fano-ipv6.git --recursive
+$ cd fano-ipv6
 $ ./tools/config.setup.sh
 $ ./build.sh
 $ sudo fanocli --deploy-scgi=ipv6.fano
@@ -45,4 +45,4 @@ Reload Apache,
 ```
 $ sudo systemctl reload apache2
 ```
-Open internet browser and go to `http://fano-app.fano`. You should see application.
+Open internet browser and go to `http://ipv6.fano`. You should see application.
