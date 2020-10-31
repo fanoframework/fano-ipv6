@@ -1,6 +1,6 @@
 # IPv6 SCGI Fano web application example
 
-Example [SCGI](https://python.ca/scgi/protocol.txt) web application skeleton using Fano Framework, Pascal web application framework, that demonstrates how to use [IPv6 address](https://fanoframework.github.io/working-with-application#use-ipv6-address).
+Example [SCGI](https://python.ca/scgi/protocol.txt) web application using Fano Framework, Pascal web application framework, that demonstrates how to use [IPv6 address](https://fanoframework.github.io/working-with-application#use-ipv6-address).
 
 This project is generated using [Fano CLI](https://github.com/fanoframework/fano-cli)
 command line tools to help scaffolding web application using Fano Framework.
