@@ -26,9 +26,9 @@ begin
         .addOption('host', 1)
         .addOption('port', 1)
         .build();
-    host := cliParams.getOption('host', '127.0.0.1');
+    host := cliParams.getOption('host', '::1');
     port := cliParams.getOption('port', 20477);
-    writeln('Starting application at ', host, ':', port);
+    writeln('Starting application at [', host, ']:', port);
 
     (*!-----------------------------------------------
      * Bootstrap SCGI application
@@ -39,7 +39,7 @@ begin
         TScgiAppServiceProvider.create(
             TServerAppServiceProvider.create(
                 TAppServiceProvider.create(),
-                (TInetSvrFactory.create(host, port) as ISocketSvrFactory).build()
+                (TInet6SvrFactory.create(host, port) as ISocketSvrFactory).build()
             )
         ),
         TAppRoutes.create()
